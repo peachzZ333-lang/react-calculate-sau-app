@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/react-calculate-sau-app/',
+  base: process.env.VERCEL ? '/' : '/react-calculate-sau-app/',
 })
